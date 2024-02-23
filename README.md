@@ -3,3 +3,6 @@ Please see the Github Pages Site for complete documentation: [quarkuscoffeeshop.
 
 # quarkuscoffeeshop-helm
 quarkuscoffeeshop-helm-chart
+
+# quarkuscoffeeshop-helm 実行
+helm install  quarkuscoffeeshop-deployment  quarkuscoffeeshop-charts/ --values quarkuscoffeeshop-charts/values.yaml
