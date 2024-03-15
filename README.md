@@ -1,11 +1,11 @@
 # Docs
-Please see the Github Pages Site for complete documentation: [quarkuscoffeeshop.github.io](https://quarkuscoffeeshop.github.io)
+Please see the Github Pages Site for complete documentation: [quarkusrobotshop.github.io](https://quarkusrobotshop.github.io)
 
-# quarkuscoffeeshop-helm
-quarkuscoffeeshop-helm-chart
+# quarkusrobotshop-helm
+quarkusrobotshop-helm-chart
 
-quarkuscoffeeshop-helm 実行
+quarkusrobotshop-helm 実行
 
-```helm install  quarkuscoffeeshop-deployment  quarkuscoffeeshop-charts/ --values quarkuscoffeeshop-charts/values.yaml```
+```helm install  quarkusrobotshop-deployment  quarkusrobotshop-charts/ --values quarkusrobotshop-charts/values.yaml```
 
-https://quarkuscoffeeshop.github.io/helm/deployment/2021/02/09/helmchart.html
+https://quarkusrobotshop.github.io/helm/deployment/2021/02/09/helmchart.html

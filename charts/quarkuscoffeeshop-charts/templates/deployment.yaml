@@ -1,31 +1,31 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: quarkuscoffeeshop-barista
+  name: quarkusrobotshop-package
   labels:
-    app: quarkuscoffeeshop-barista
+    app: quarkusrobotshop-package
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     release: {{ .Release.Name }}
 spec:
-  replicas: {{ .Values.replica_count.barista }}
+  replicas: {{ .Values.replica_count.package }}
   selector:
     matchLabels:
-      app: quarkuscoffeeshop-barista
+      app: quarkusrobotshop-package
   template:
     metadata:
-      name: quarkuscoffeeshop-barista-deployment
+      name: quarkusrobotshop-package-deployment
       labels:
-        app:  quarkuscoffeeshop-barista
+        app:  quarkusrobotshop-package
         release: {{ .Release.Name }}
-        app.kubernetes.io/component: quarkuscoffeeshop-barista
-        app.kubernetes.io/instance: quarkuscoffeeshop-barista
-        app.kubernetes.io/part-of: quarkus-cafe
-        quarkus-cafe: ""
+        app.kubernetes.io/component: quarkusrobotshop-package
+        app.kubernetes.io/instance: quarkusrobotshop-package
+        app.kubernetes.io/part-of: quarkus-robot
+        quarkus-robot: ""
         app.openshift.io/runtime-namespace: {{ .Values.projectnamespace }}
     spec:
       containers:
-        - name: quarkuscoffeeshop-barista
-          image: quay.io/quarkuscoffeeshop/quarkuscoffeeshop-barista:{{ .Values.version.barista }}
+        - name: quarkusrobotshop-package
+          image: quay.io/quarkusrobotshop/quarkusrobotshop-package:{{ .Values.version.package }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: 8778
@@ -39,31 +39,31 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: quarkuscoffeeshop-inventory
+  name: quarkusrobotshop-inventory
   labels:
-    app: quarkuscoffeeshop-inventory
+    app: quarkusrobotshop-inventory
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     release: {{ .Release.Name }}
 spec:
   replicas: {{ .Values.replica_count.inventory }}
   selector:
     matchLabels:
-      app: quarkuscoffeeshop-inventory
+      app: quarkusrobotshop-inventory
   template:
     metadata:
-      name: quarkuscoffeeshop-inventory-deployment
+      name: quarkusrobotshop-inventory-deployment
       labels:
-        app:  quarkuscoffeeshop-inventory
+        app:  quarkusrobotshop-inventory
         release: {{ .Release.Name }}
-        app.kubernetes.io/component: quarkuscoffeeshop-inventory
-        app.kubernetes.io/instance: quarkuscoffeeshop-inventory
-        app.kubernetes.io/part-of: quarkus-cafe
-        quarkus-cafe: ""
+        app.kubernetes.io/component: quarkusrobotshop-inventory
+        app.kubernetes.io/instance: quarkusrobotshop-inventory
+        app.kubernetes.io/part-of: quarkus-robot
+        quarkus-robot: ""
         app.openshift.io/runtime-namespace: {{ .Values.projectnamespace }}
     spec:
       containers:
-        - name: quarkuscoffeeshop-inventory
-          image: quay.io/quarkuscoffeeshop/quarkuscoffeeshop-inventory:{{ .Values.version.inventory }}
+        - name: quarkusrobotshop-inventory
+          image: quay.io/quarkusrobotshop/quarkusrobotshop-inventory:{{ .Values.version.inventory }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: 8778
@@ -77,38 +77,38 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: quarkuscoffeeshop-counter
+  name: quarkusrobotshop-counter
   labels:
-    app: quarkuscoffeeshop-counter
+    app: quarkusrobotshop-counter
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     release: {{ .Release.Name }}
 spec:
   replicas: {{ .Values.replica_count.counter }}
   selector:
     matchLabels:
-      app: quarkuscoffeeshop-counter
+      app: quarkusrobotshop-counter
   template:
     metadata:
-      name: quarkuscoffeeshop-counter-deployment
+      name: quarkusrobotshop-counter-deployment
       labels:
-        app:  quarkuscoffeeshop-counter
+        app:  quarkusrobotshop-counter
         release: {{ .Release.Name }}
-        app.kubernetes.io/component: quarkuscoffeeshop-counter
-        app.kubernetes.io/instance: quarkuscoffeeshop-counter
-        app.kubernetes.io/part-of: quarkus-cafe
-        quarkus-cafe: ""
+        app.kubernetes.io/component: quarkusrobotshop-counter
+        app.kubernetes.io/instance: quarkusrobotshop-counter
+        app.kubernetes.io/part-of: quarkus-robot
+        quarkus-robot: ""
         app.openshift.io/runtime-namespace: {{ .Values.projectnamespace }}
     spec:
       containers:
-        - name: quarkuscoffeeshop-counter
-          image: quay.io/quarkuscoffeeshop/quarkuscoffeeshop-counter:{{ .Values.version.counter }}
+        - name: quarkusrobotshop-counter
+          image: quay.io/quarkusrobotshop/quarkusrobotshop-counter:{{ .Values.version.counter }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: 8080
               protocol: TCP
           env:
             - name: KAFKA_BOOTSTRAP_URLS
-              value: 'cafe-cluster-kafka-bootstrap:9092'
+              value: 'robot-cluster-kafka-bootstrap:9092'
             - name: PGSQL_URL
               value: {{ .Values.pgsql_url }}
             - name: PGSQL_USER
@@ -120,72 +120,72 @@ spec:
             - name: QUARKUS_LOG_LEVEL
               value: {{ .Values.quarkus_log_level }}
             - name: QUARKUSCOFFEESHOP_LOG_LEVEL
-              value: {{ .Values.quarkuscoffeeshop_log_level }}
+              value: {{ .Values.quarkusrobotshop_log_level }}
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: quarkuscoffeeshop-customermocker
+  name: quarkusrobotshop-customermocker
   labels:
-    app: quarkuscoffeeshop-customermocker
+    app: quarkusrobotshop-customermocker
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     release: {{ .Release.Name }}
 spec:
   replicas: {{ .Values.replica_count.customermocker }}
   selector:
     matchLabels:
-      app: quarkuscoffeeshop-customermocker
+      app: quarkusrobotshop-customermocker
   template:
     metadata:
-      name: quarkuscoffeeshop-customermocker-deployment
+      name: quarkusrobotshop-customermocker-deployment
       labels:
-        app:  quarkuscoffeeshop-customermocker
+        app:  quarkusrobotshop-customermocker
         release: {{ .Release.Name }}
-        app.kubernetes.io/component: quarkuscoffeeshop-customermocker
-        app.kubernetes.io/instance: quarkuscoffeeshop-customermocker
-        app.kubernetes.io/part-of: quarkus-cafe
-        quarkus-cafe: ""
+        app.kubernetes.io/component: quarkusrobotshop-customermocker
+        app.kubernetes.io/instance: quarkusrobotshop-customermocker
+        app.kubernetes.io/part-of: quarkus-robot
+        quarkus-robot: ""
         app.openshift.io/runtime-namespace: {{ .Values.projectnamespace }}
     spec:
       containers:
-        - name: quarkuscoffeeshop-customermocker
-          image: quay.io/quarkuscoffeeshop/quarkuscoffeeshop-customermocker:{{ .Values.version.customermocker }}
+        - name: quarkusrobotshop-customermocker
+          image: quay.io/quarkusrobotshop/quarkusrobotshop-customermocker:{{ .Values.version.customermocker }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: 8080
               protocol: TCP
           env:
             - name: REST_URL
-              value: http://quarkuscoffeeshop-web-{{ .Values.projectnamespace }}.apps.{{ .Values.domain }}
+              value: http://quarkusrobotshop-web-{{ .Values.projectnamespace }}.apps.{{ .Values.domain }}
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: quarkuscoffeeshop-kitchen
+  name: quarkusrobotshop-customize
   labels:
-    app: quarkuscoffeeshop-kitchen
+    app: quarkusrobotshop-customize
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     release: {{ .Release.Name }}
 spec:
-  replicas: {{ .Values.replica_count.kitchen }}
+  replicas: {{ .Values.replica_count.customize }}
   selector:
     matchLabels:
-      app: quarkuscoffeeshop-kitchen
+      app: quarkusrobotshop-customize
   template:
     metadata:
-      name: quarkuscoffeeshop-kitchen-deployment
+      name: quarkusrobotshop-customize-deployment
       labels:
-        app:  quarkuscoffeeshop-kitchen
+        app:  quarkusrobotshop-customize
         release: {{ .Release.Name }}
-        app.kubernetes.io/component: quarkuscoffeeshop-kitchen
-        app.kubernetes.io/instance: quarkuscoffeeshop-kitchen
-        app.kubernetes.io/part-of: quarkus-cafe
-        quarkus-cafe: ""
+        app.kubernetes.io/component: quarkusrobotshop-customize
+        app.kubernetes.io/instance: quarkusrobotshop-customize
+        app.kubernetes.io/part-of: quarkus-robot
+        quarkus-robot: ""
         app.openshift.io/runtime-namespace: {{ .Values.projectnamespace }}
     spec:
       containers:
-        - name: quarkuscoffeeshop-kitchen
-          image: quay.io/quarkuscoffeeshop/quarkuscoffeeshop-kitchen:{{ .Values.version.kitchen }}
+        - name: quarkusrobotshop-customize
+          image: quay.io/quarkusrobotshop/quarkusrobotshop-customize:{{ .Values.version.customize }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: 8080
@@ -197,31 +197,31 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: quarkuscoffeeshop-customerloyalty
+  name: quarkusrobotshop-customerloyalty
   labels:
-    app: quarkuscoffeeshop-customerloyalty
+    app: quarkusrobotshop-customerloyalty
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     release: {{ .Release.Name }}
 spec:
   replicas: {{ .Values.replica_count.customerloyalty }}
   selector:
     matchLabels:
-      app: quarkuscoffeeshop-customerloyalty
+      app: quarkusrobotshop-customerloyalty
   template:
     metadata:
-      name: quarkuscoffeeshop-customerloyalty-deployment
+      name: quarkusrobotshop-customerloyalty-deployment
       labels:
-        app:  quarkuscoffeeshop-customerloyalty
+        app:  quarkusrobotshop-customerloyalty
         release: {{ .Release.Name }}
-        app.kubernetes.io/component: quarkuscoffeeshop-customerloyalty
-        app.kubernetes.io/instance: quarkuscoffeeshop-customerloyalty
-        app.kubernetes.io/part-of: quarkus-cafe
-        quarkus-cafe: ""
+        app.kubernetes.io/component: quarkusrobotshop-customerloyalty
+        app.kubernetes.io/instance: quarkusrobotshop-customerloyalty
+        app.kubernetes.io/part-of: quarkus-robot
+        quarkus-robot: ""
         app.openshift.io/runtime-namespace: {{ .Values.projectnamespace }}
     spec:
       containers:
-        - name: quarkuscoffeeshop-customerloyalty
-          image: quay.io/quarkuscoffeeshop/quarkuscoffeeshop-customerloyalty:{{ .Values.version.customerloyalty }}
+        - name: quarkusrobotshop-customerloyalty
+          image: quay.io/quarkusrobotshop/quarkusrobotshop-customerloyalty:{{ .Values.version.customerloyalty }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: 8080
@@ -237,29 +237,29 @@ kind: Deployment
 metadata:
   name: quarkuscoffeshop-web
   labels:
-    app: quarkuscoffeeshop-web
+    app: quarkusrobotshop-web
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     release: {{ .Release.Name }}
 spec:
   replicas: {{ .Values.replica_count.web }}
   selector:
     matchLabels:
-      app: quarkuscoffeeshop-web
+      app: quarkusrobotshop-web
   template:
     metadata:
-      name: quarkuscoffeeshop-web
+      name: quarkusrobotshop-web
       labels:
-        app: quarkuscoffeeshop-web
+        app: quarkusrobotshop-web
         release: {{ .Release.Name }}
-        app.kubernetes.io/component: quarkuscoffeeshop-web
-        app.kubernetes.io/instance: quarkuscoffeeshop-web
-        app.kubernetes.io/part-of: quarkuscoffeeshop
-        quarkus-cafe: ""
+        app.kubernetes.io/component: quarkusrobotshop-web
+        app.kubernetes.io/instance: quarkusrobotshop-web
+        app.kubernetes.io/part-of: quarkusrobotshop
+        quarkus-robot: ""
         app.openshift.io/runtime-namespace: {{ .Values.projectnamespace }}
     spec:
       containers:
-        - name: quarkuscoffeeshop-web
-          image: quay.io/quarkuscoffeeshop/quarkuscoffeeshop-web:{{ .Values.version.web }}
+        - name: quarkusrobotshop-web
+          image: quay.io/quarkusrobotshop/quarkusrobotshop-web:{{ .Values.version.web }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: 8080
@@ -268,12 +268,12 @@ spec:
             - name: KAFKA_BOOTSTRAP_SERVERS
               value: {{ .Values.kafka_cluster_name }}-kafka-bootstrap:9092
             - name: REST_URL
-              value: http://quarkuscoffeeshop-web-{{ .Values.projectnamespace }}.apps.{{ .Values.domain }}
+              value: http://quarkusrobotshop-web-{{ .Values.projectnamespace }}.apps.{{ .Values.domain }}
             - name: STREAM_URL
-              value:  http://quarkuscoffeeshop-web-{{ .Values.projectnamespace }}.apps.{{ .Values.domain }}/dashboard/stream
+              value:  http://quarkusrobotshop-web-{{ .Values.projectnamespace }}.apps.{{ .Values.domain }}/dashboard/stream
             - name: LOYALTY_STREAM_URL
-              value: http://quarkuscoffeeshop-web-{{ .Values.projectnamespace }}.apps.{{ .Values.domain }}/dashboard/loyaltystream
+              value: http://quarkusrobotshop-web-{{ .Values.projectnamespace }}.apps.{{ .Values.domain }}/dashboard/loyaltystream
             - name: CORS_ORIGINS
-              value: http://quarkuscoffeeshop-web-{{ .Values.projectnamespace }}.apps.{{ .Values.domain }}
+              value: http://quarkusrobotshop-web-{{ .Values.projectnamespace }}.apps.{{ .Values.domain }}
             - name: STORE_ID
               value: {{ .Values.storeid }}

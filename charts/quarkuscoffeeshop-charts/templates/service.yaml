@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: quarkuscoffeeshop-barista
+  name: quarkusrobotshop-package
   labels:
-    app:  quarkuscoffeeshop-barista
+    app:  quarkusrobotshop-package
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     release: {{ .Release.Name }}
 spec:
   selector:
-    app:  quarkuscoffeeshop-barista
+    app:  quarkusrobotshop-package
     release: {{ .Release.Name }}
   type: ClusterIP
   ports:
@@ -24,14 +24,14 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: quarkuscoffeeshop-core
+  name: quarkusrobotshop-core
   labels:
-    app: quarkuscoffeeshop-core
+    app: quarkusrobotshop-core
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     release: {{ .Release.Name }}
 spec:
   selector:
-    app: quarkuscoffeeshop-core
+    app: quarkusrobotshop-core
     release: {{ .Release.Name }}
   type: ClusterIP
   ports:
@@ -43,14 +43,14 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: quarkuscoffeeshop-customermocker
+  name: quarkusrobotshop-customermocker
   labels:
-    app: quarkuscoffeeshop-customermocker
+    app: quarkusrobotshop-customermocker
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     release: {{ .Release.Name }}
 spec:
   selector:
-    app: quarkuscoffeeshop-customermocker
+    app: quarkusrobotshop-customermocker
     release: {{ .Release.Name }}
   type: ClusterIP
   ports:
@@ -62,14 +62,14 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: quarkuscoffeeshop-kitchen
+  name: quarkusrobotshop-customize
   labels:
-    app: quarkuscoffeeshop-kitchen
+    app: quarkusrobotshop-customize
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     release: {{ .Release.Name }}
 spec:
   selector:
-    app: quarkuscoffeeshop-kitchen
+    app: quarkusrobotshop-customize
     release: {{ .Release.Name }}
   type: ClusterIP
   ports:
@@ -81,14 +81,14 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: quarkuscoffeeshop-inventory
+  name: quarkusrobotshop-inventory
   labels:
-    app: quarkuscoffeeshop-inventory
+    app: quarkusrobotshop-inventory
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     release: {{ .Release.Name }}
 spec:
   selector:
-    app: quarkuscoffeeshop-inventory
+    app: quarkusrobotshop-inventory
   type: ClusterIP
   ports:
     - name: 8080-tcp
@@ -99,14 +99,14 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: quarkuscoffeeshop-customerloyalty
+  name: quarkusrobotshop-customerloyalty
   labels:
-    app: quarkuscoffeeshop-customerloyalty
+    app: quarkusrobotshop-customerloyalty
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     release: {{ .Release.Name }}
 spec:
   selector:
-    app: quarkuscoffeeshop-customerloyalty
+    app: quarkusrobotshop-customerloyalty
   type: ClusterIP
   ports:
     - name: 8080-tcp
@@ -117,14 +117,14 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: quarkuscoffeeshop-web
+  name: quarkusrobotshop-web
   labels:
-    app: quarkuscoffeeshop-web
+    app: quarkusrobotshop-web
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     release: {{ .Release.Name }}
 spec:
   selector:
-    app: quarkuscoffeeshop-web
+    app: quarkusrobotshop-web
   type: ClusterIP
   ports:
     - name: 8080-tcp

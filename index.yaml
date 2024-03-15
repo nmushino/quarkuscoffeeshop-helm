@@ -9,7 +9,7 @@ entries:
     name: quarkus-helm-chart
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkus-helm-chart-2.0.0/quarkus-helm-chart-2.0.0.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkus-helm-chart-2.0.0/quarkus-helm-chart-2.0.0.tgz
     version: 2.0.0
   - apiVersion: v2
     appVersion: 2.4.0
@@ -19,7 +19,7 @@ entries:
     name: quarkus-helm-chart
     type: application
     urls:
-    - https://github.com/tosin2013/quarkus-cafe-helm-chart/releases/download/quarkus-helm-chart-1.0.0/quarkus-helm-chart-1.0.0.tgz
+    - https://github.com/tosin2013/quarkus-robot-helm-chart/releases/download/quarkus-helm-chart-1.0.0/quarkus-helm-chart-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
     appVersion: 1.16.0
@@ -29,7 +29,7 @@ entries:
     name: quarkus-helm-chart
     type: application
     urls:
-    - https://github.com/tosin2013/quarkus-cafe-helm-chart/releases/download/quarkus-helm-chart-0.1.3/quarkus-helm-chart-0.1.3.tgz
+    - https://github.com/tosin2013/quarkus-robot-helm-chart/releases/download/quarkus-helm-chart-0.1.3/quarkus-helm-chart-0.1.3.tgz
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
@@ -39,7 +39,7 @@ entries:
     name: quarkus-helm-chart
     type: application
     urls:
-    - https://github.com/tosin2013/quarkus-cafe-helm-chart/releases/download/quarkus-helm-chart-0.1.2/quarkus-helm-chart-0.1.2.tgz
+    - https://github.com/tosin2013/quarkus-robot-helm-chart/releases/download/quarkus-helm-chart-0.1.2/quarkus-helm-chart-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
@@ -49,7 +49,7 @@ entries:
     name: quarkus-helm-chart
     type: application
     urls:
-    - https://github.com/tosin2013/quarkus-cafe-helm-chart/releases/download/quarkus-helm-chart-0.1.1/quarkus-helm-chart-0.1.1.tgz
+    - https://github.com/tosin2013/quarkus-robot-helm-chart/releases/download/quarkus-helm-chart-0.1.1/quarkus-helm-chart-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
@@ -59,348 +59,348 @@ entries:
     name: quarkus-helm-chart
     type: application
     urls:
-    - https://github.com/tosin2013/quarkus-cafe-helm-chart/releases/download/quarkus-helm-chart-0.1.0/quarkus-helm-chart-0.1.0.tgz
+    - https://github.com/tosin2013/quarkus-robot-helm-chart/releases/download/quarkus-helm-chart-0.1.0/quarkus-helm-chart-0.1.0.tgz
     version: 0.1.0
-  quarkuscoffeeshop-charts:
+  quarkusrobotshop-charts:
   - apiVersion: v2
     appVersion: 5.0.3
     created: "2021-03-15T19:28:14.832719721Z"
     description: A Helm chart for Kubernetes
     digest: 8eb47408be9714b5d3aaeced26497a582a294d91c89051fadec43f8f944b6141
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-3.5.0/quarkuscoffeeshop-charts-3.5.0.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-3.5.0/quarkusrobotshop-charts-3.5.0.tgz
     version: 3.5.0
   - apiVersion: v2
     appVersion: 5.0.1
     created: "2021-03-15T19:12:15.63056816Z"
     description: A Helm chart for Kubernetes
     digest: bcf1e912901a9c62287a69977744a9f0c0472b1a731f9fee89cfe5dc873af224
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-3.4.9/quarkuscoffeeshop-charts-3.4.9.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-3.4.9/quarkusrobotshop-charts-3.4.9.tgz
     version: 3.4.9
   - apiVersion: v2
     appVersion: 5.0.1
     created: "2021-03-07T21:24:14.949135255Z"
     description: A Helm chart for Kubernetes
     digest: 85311e36515e0cf3177db7d8e0fc6aeedfbbdb8ae27e4006454e82ae7f2b08a3
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-3.4.8/quarkuscoffeeshop-charts-3.4.8.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-3.4.8/quarkusrobotshop-charts-3.4.8.tgz
     version: 3.4.8
   - apiVersion: v2
     appVersion: 5.0.1
     created: "2021-02-12T21:26:41.786367467Z"
     description: A Helm chart for Kubernetes
     digest: 8834971870cd10373f1b54b23533b86ddd0967a05c23489385693d08f8237107
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-3.4.7/quarkuscoffeeshop-charts-3.4.7.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-3.4.7/quarkusrobotshop-charts-3.4.7.tgz
     version: 3.4.7
   - apiVersion: v2
     appVersion: 5.0.1
     created: "2021-01-22T14:36:19.998254153Z"
     description: A Helm chart for Kubernetes
     digest: ed05853d63e07075db838ea6cf277518ab4ee1d959b7aefd85d2932084f0e2c8
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-3.4.6/quarkuscoffeeshop-charts-3.4.6.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-3.4.6/quarkusrobotshop-charts-3.4.6.tgz
     version: 3.4.6
   - apiVersion: v2
     appVersion: 5.0.1
     created: "2021-01-22T14:17:37.431558289Z"
     description: A Helm chart for Kubernetes
     digest: 27b13a79227e0f6eded6cbd3f5f9f9fb08a2faf3a1f0273cf150577d73a8a16d
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-3.4.5/quarkuscoffeeshop-charts-3.4.5.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-3.4.5/quarkusrobotshop-charts-3.4.5.tgz
     version: 3.4.5
   - apiVersion: v2
     appVersion: 5.0.1
     created: "2021-01-20T19:33:40.432074247Z"
     description: A Helm chart for Kubernetes
     digest: 50f42bd794863cdb8d76ded889c290a9532230733ef05394388f2064c3b40f6b
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-3.4.4/quarkuscoffeeshop-charts-3.4.4.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-3.4.4/quarkusrobotshop-charts-3.4.4.tgz
     version: 3.4.4
   - apiVersion: v2
     appVersion: 5.0.1
     created: "2021-01-20T19:25:24.333700023Z"
     description: A Helm chart for Kubernetes
     digest: 98a594e4e603456594c3967f04c78836103d74c9d8ebef79cf68ae8f74de8b07
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-3.4.3/quarkuscoffeeshop-charts-3.4.3.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-3.4.3/quarkusrobotshop-charts-3.4.3.tgz
     version: 3.4.3
   - apiVersion: v2
     appVersion: 4.1.0
     created: "2020-11-20T03:59:53.097581643Z"
     description: A Helm chart for Kubernetes
     digest: c9e7775986af894e5208e76634ea8f7fde092f3e35701ed14c184a2f20d29ca1
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-3.4.2/quarkuscoffeeshop-charts-3.4.2.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-3.4.2/quarkusrobotshop-charts-3.4.2.tgz
     version: 3.4.2
   - apiVersion: v2
     appVersion: 3.4.1
     created: "2020-11-18T13:20:09.524787744Z"
     description: A Helm chart for Kubernetes
     digest: 32df5ef7bd5d69dc4f05b5626d79410854166f9fb002993d3730dce7b2719737
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-3.4.1/quarkuscoffeeshop-charts-3.4.1.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-3.4.1/quarkusrobotshop-charts-3.4.1.tgz
     version: 3.4.1
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-10-15T00:16:36.377540443Z"
     description: A Helm chart for Kubernetes
     digest: 303ce96cdc1a254f918c25d701ab53364d077ead6462b5b2de8d427697dbf780
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-3.3.0/quarkuscoffeeshop-charts-3.3.0.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-3.3.0/quarkusrobotshop-charts-3.3.0.tgz
     version: 3.3.0
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-10-14T17:06:59.557873272Z"
     description: A Helm chart for Kubernetes
     digest: ff0f3b1d9b328fece6aec408c76711e3aa6cfee85c0947c688185511304823c5
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-3.2.0/quarkuscoffeeshop-charts-3.2.0.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-3.2.0/quarkusrobotshop-charts-3.2.0.tgz
     version: 3.2.0
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-26T10:16:16.90780474Z"
     description: A Helm chart for Kubernetes
     digest: 2712b4044a2776d295dab9101c37a85457d4d50dd7bed834f2a1f5919221828d
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-3.1.0/quarkuscoffeeshop-charts-3.1.0.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-3.1.0/quarkusrobotshop-charts-3.1.0.tgz
     version: 3.1.0
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-26T10:15:32.57213284Z"
     description: A Helm chart for Kubernetes
     digest: 914752cde31e9fc45eb68cd2b426c7794fe99fc2d20551c5b3a399d965035768
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-2.1.0/quarkuscoffeeshop-charts-2.1.0.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-2.1.0/quarkusrobotshop-charts-2.1.0.tgz
     version: 2.1.0
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-24T18:56:53.601595131Z"
     description: A Helm chart for Kubernetes
     digest: 62c017b341fde5af8d96f2d20a03901440fc43051f2a80b20333dffea62645ab
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-2.0.19/quarkuscoffeeshop-charts-2.0.19.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-2.0.19/quarkusrobotshop-charts-2.0.19.tgz
     version: 2.0.19
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-24T18:47:41.158229514Z"
     description: A Helm chart for Kubernetes
     digest: ee24fec026b621d876eb94eae0de9a91c2bca382ec3ce446ffcc4825adbf10bd
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-2.0.18/quarkuscoffeeshop-charts-2.0.18.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-2.0.18/quarkusrobotshop-charts-2.0.18.tgz
     version: 2.0.18
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-24T18:44:18.804450659Z"
     description: A Helm chart for Kubernetes
     digest: a1c17dc68d93471803409189f2aa8113177f1305ea9fef0190cea9d0a20d5342
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-2.0.17/quarkuscoffeeshop-charts-2.0.17.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-2.0.17/quarkusrobotshop-charts-2.0.17.tgz
     version: 2.0.17
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-24T18:42:56.823251657Z"
     description: A Helm chart for Kubernetes
     digest: 129d0a85d63667fbd271d2617503891bc60daf60bcabee66541c55647d21ce26
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-2.0.16/quarkuscoffeeshop-charts-2.0.16.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-2.0.16/quarkusrobotshop-charts-2.0.16.tgz
     version: 2.0.16
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-24T18:39:05.534356618Z"
     description: A Helm chart for Kubernetes
     digest: 0b19e07d1f219f1c4188fabd11692e3b7785dc0e49f7ac0bc44125e901653e15
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-2.0.15/quarkuscoffeeshop-charts-2.0.15.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-2.0.15/quarkusrobotshop-charts-2.0.15.tgz
     version: 2.0.15
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-24T18:22:01.946183446Z"
     description: A Helm chart for Kubernetes
     digest: 44dff4e6c88d0f29db12e8c74874261df4a4ba746f3509c2da1d771c042783c2
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-2.0.14/quarkuscoffeeshop-charts-2.0.14.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-2.0.14/quarkusrobotshop-charts-2.0.14.tgz
     version: 2.0.14
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-24T18:16:45.831438997Z"
     description: A Helm chart for Kubernetes
     digest: 17321496d1151274b78fdc34a3e2a69fb34fe93a9077e3419120fb6684ddf877
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-2.0.13/quarkuscoffeeshop-charts-2.0.13.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-2.0.13/quarkusrobotshop-charts-2.0.13.tgz
     version: 2.0.13
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-24T18:10:51.470753002Z"
     description: A Helm chart for Kubernetes
     digest: 99f8696182588e4c31a127e31cfee37f67879a10091aeddebfe352b0127f95e5
-    name: quarkuscoffeeshop-charts
+    name: quarkusrobotshop-charts
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-charts-2.0.12/quarkuscoffeeshop-charts-2.0.12.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-charts-2.0.12/quarkusrobotshop-charts-2.0.12.tgz
     version: 2.0.12
-  quarkuscoffeeshop-helm:
+  quarkusrobotshop-helm:
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-24T18:06:03.38573916Z"
     description: A Helm chart for Kubernetes
     digest: ca3be7950a6e16ee924f527476a7852b64d051ff7560b9669e999fd3377ee58a
-    name: quarkuscoffeeshop-helm
+    name: quarkusrobotshop-helm
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-helm-2.0.12/quarkuscoffeeshop-helm-2.0.12.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-helm-2.0.12/quarkusrobotshop-helm-2.0.12.tgz
     version: 2.0.12
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-24T18:00:21.140322932Z"
     description: A Helm chart for Kubernetes
     digest: 35a2cdf8b7ded7a33fad7817496fd791d7f1b738f90b6de53164df72bd0f7e62
-    name: quarkuscoffeeshop-helm
+    name: quarkusrobotshop-helm
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-helm-2.0.11/quarkuscoffeeshop-helm-2.0.11.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-helm-2.0.11/quarkusrobotshop-helm-2.0.11.tgz
     version: 2.0.11
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-24T15:52:30.468347543Z"
     description: A Helm chart for Kubernetes
     digest: 880141159a09cb3ad44bca8386fc1f6ba0fd1a0ccff39491a4b9072c145553f0
-    name: quarkuscoffeeshop-helm
+    name: quarkusrobotshop-helm
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-helm-2.0.10/quarkuscoffeeshop-helm-2.0.10.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-helm-2.0.10/quarkusrobotshop-helm-2.0.10.tgz
     version: 2.0.10
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-24T15:44:47.764701211Z"
     description: A Helm chart for Kubernetes
     digest: e79a984151e2ee9710a32180181850a5297cc179e8d727df1a339aa9b9da4206
-    name: quarkuscoffeeshop-helm
+    name: quarkusrobotshop-helm
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-helm-2.0.9/quarkuscoffeeshop-helm-2.0.9.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-helm-2.0.9/quarkusrobotshop-helm-2.0.9.tgz
     version: 2.0.9
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-24T15:33:50.248033756Z"
     description: A Helm chart for Kubernetes
     digest: 33f9582b54ca5439d04e52269d1f6f661cc94c10574bb6a83ce80d30486f8699
-    name: quarkuscoffeeshop-helm
+    name: quarkusrobotshop-helm
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-helm-2.0.7/quarkuscoffeeshop-helm-2.0.7.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-helm-2.0.7/quarkusrobotshop-helm-2.0.7.tgz
     version: 2.0.7
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-24T15:31:40.135722493Z"
     description: A Helm chart for Kubernetes
     digest: e5275ae6a789e39acc111fd688e67637984ca819d220177e05371b94ca7c4d37
-    name: quarkuscoffeeshop-helm
+    name: quarkusrobotshop-helm
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-helm-2.0.6/quarkuscoffeeshop-helm-2.0.6.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-helm-2.0.6/quarkusrobotshop-helm-2.0.6.tgz
     version: 2.0.6
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-24T15:27:27.986085853Z"
     description: A Helm chart for Kubernetes
     digest: 8818505373b30f84ca68db4a2d6077611cb5b497f0d1ba2024c274e028e13e68
-    name: quarkuscoffeeshop-helm
+    name: quarkusrobotshop-helm
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-helm-2.0.5/quarkuscoffeeshop-helm-2.0.5.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-helm-2.0.5/quarkusrobotshop-helm-2.0.5.tgz
     version: 2.0.5
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-24T15:24:46.3635845Z"
     description: A Helm chart for Kubernetes
     digest: 60158ed9ff6b14ebee439e97003f07da867e644587fbc9b0357a047a3a8fddfe
-    name: quarkuscoffeeshop-helm
+    name: quarkusrobotshop-helm
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-helm-2.0.4/quarkuscoffeeshop-helm-2.0.4.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-helm-2.0.4/quarkusrobotshop-helm-2.0.4.tgz
     version: 2.0.4
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-24T15:21:20.91249854Z"
     description: A Helm chart for Kubernetes
     digest: d1ed3511c3f4a494c6b7762211ab665209bce9032999c6cc551679c051a1c154
-    name: quarkuscoffeeshop-helm
+    name: quarkusrobotshop-helm
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-helm-2.0.3/quarkuscoffeeshop-helm-2.0.3.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-helm-2.0.3/quarkusrobotshop-helm-2.0.3.tgz
     version: 2.0.3
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-24T15:08:58.353736172Z"
     description: A Helm chart for Kubernetes
     digest: 29996f374a3dc867cc7baa9dd38507c1aec82df80c11684f602b9314d6be46e9
-    name: quarkuscoffeeshop-helm
+    name: quarkusrobotshop-helm
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-helm-2.0.2/quarkuscoffeeshop-helm-2.0.2.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-helm-2.0.2/quarkusrobotshop-helm-2.0.2.tgz
     version: 2.0.2
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-24T15:03:21.957977318Z"
     description: A Helm chart for Kubernetes
     digest: 38e07aa1a05e1722e0e55225e8677ce5b421ee04f7b9cb663480a4645040dcc2
-    name: quarkuscoffeeshop-helm
+    name: quarkusrobotshop-helm
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-helm-2.0.1/quarkuscoffeeshop-helm-2.0.1.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-helm-2.0.1/quarkusrobotshop-helm-2.0.1.tgz
     version: 2.0.1
   - apiVersion: v2
     appVersion: 3.0.1
     created: "2020-09-24T15:00:24.228641183Z"
     description: A Helm chart for Kubernetes
     digest: 00e15edf7028e5a91e87a704bdce69cb21639f6f74282dae335260b4888a088d
-    name: quarkuscoffeeshop-helm
+    name: quarkusrobotshop-helm
     type: application
     urls:
-    - https://github.com/quarkuscoffeeshop/quarkuscoffeeshop-helm/releases/download/quarkuscoffeeshop-helm-2.0.0/quarkuscoffeeshop-helm-2.0.0.tgz
+    - https://github.com/quarkusrobotshop/quarkusrobotshop-helm/releases/download/quarkusrobotshop-helm-2.0.0/quarkusrobotshop-helm-2.0.0.tgz
     version: 2.0.0
 generated: "2021-03-15T19:28:14.834505631Z"
