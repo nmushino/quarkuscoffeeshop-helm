@@ -119,7 +119,7 @@ spec:
               value: 'true'
             - name: QUARKUS_LOG_LEVEL
               value: {{ .Values.quarkus_log_level }}
-            - name: QUARKUSCOFFEESHOP_LOG_LEVEL
+            - name: QUARKUSrobotSHOP_LOG_LEVEL
               value: {{ .Values.quarkusrobotshop_log_level }}
 ---
 apiVersion: apps/v1
