@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: quarkusrobotshop-package
+  name: quarkusrobotshop-homerobot
   labels:
-    app:  quarkusrobotshop-package
+    app:  quarkusrobotshop-homerobot
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     release: {{ .Release.Name }}
 spec:
   selector:
-    app:  quarkusrobotshop-package
+    app:  quarkusrobotshop-homerobot
     release: {{ .Release.Name }}
   type: ClusterIP
   ports:
@@ -62,14 +62,14 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: quarkusrobotshop-customize
+  name: quarkusrobotshop-prorobot
   labels:
-    app: quarkusrobotshop-customize
+    app: quarkusrobotshop-prorobot
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     release: {{ .Release.Name }}
 spec:
   selector:
-    app: quarkusrobotshop-customize
+    app: quarkusrobotshop-prorobot
     release: {{ .Release.Name }}
   type: ClusterIP
   ports:

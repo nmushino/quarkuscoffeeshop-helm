@@ -2,33 +2,32 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-# Quarkus Cafe Application Variables
+# Quarkus RobotCafe Application Variables
 projectnamespace: quarkusrobotshop-demo
 domain: ocp4.example.com
 kafka_cluster_name: robot-cluster
 version:
-  package:  5.0.0-SNAPSHOT
+  homerobot:  5.0.0-SNAPSHOT
   counter:  5.0.3-SNAPSHOT
   customermocker:  5.0.1-SNAPSHOT
   inventory: 5.0.0-SNAPSHOT
-  customize:  5.0.0-SNAPSHOT
+  prorobot:  5.0.0-SNAPSHOT
   customerloyalty: 5.0.1-SNAPSHOT
   web:  5.0.3-SNAPSHOT
 replica_count:
-  package: 1
+  homerobot: 1
   counter: 1
   customermocker: 1
   inventory: 1
   customerloyalty: 1
-  customize: 1
+  prorobot: 1
   web: 1
 pgsql_url: 'jdbc:postgresql://robotshopdb:5432/robotshopdb?currentSchema=robotshop'
-pgsql_username: coffeshopadmin
+pgsql_username: robotshopadmin
 pgsql_password: 'changepassword'
 storeid: ATLANTA
 quarkus_log_level: INFO
 quarkusrobotshop_log_level: DEBUG
-
 
 # Helm chart variables
 Release:

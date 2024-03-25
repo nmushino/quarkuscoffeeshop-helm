@@ -1,31 +1,31 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: quarkusrobotshop-package
+  name: quarkusrobotshop-homerobot
   labels:
-    app: quarkusrobotshop-package
+    app: quarkusrobotshop-homerobot
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     release: {{ .Release.Name }}
 spec:
-  replicas: {{ .Values.replica_count.package }}
+  replicas: {{ .Values.replica_count.homerobot }}
   selector:
     matchLabels:
-      app: quarkusrobotshop-package
+      app: quarkusrobotshop-homerobot
   template:
     metadata:
-      name: quarkusrobotshop-package-deployment
+      name: quarkusrobotshop-homerobot-deployment
       labels:
-        app:  quarkusrobotshop-package
+        app:  quarkusrobotshop-homerobot
         release: {{ .Release.Name }}
-        app.kubernetes.io/component: quarkusrobotshop-package
-        app.kubernetes.io/instance: quarkusrobotshop-package
+        app.kubernetes.io/component: quarkusrobotshop-homerobot
+        app.kubernetes.io/instance: quarkusrobotshop-homerobot
         app.kubernetes.io/part-of: quarkus-robot
         quarkus-robot: ""
         app.openshift.io/runtime-namespace: {{ .Values.projectnamespace }}
     spec:
       containers:
-        - name: quarkusrobotshop-package
-          image: quay.io/quarkusrobotshop/quarkusrobotshop-package:{{ .Values.version.package }}
+        - name: quarkusrobotshop-homerobot
+          image: quay.io/quarkusrobotshop/quarkusrobotshop-homerobot:{{ .Values.version.homerobot }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: 8778
@@ -161,31 +161,31 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: quarkusrobotshop-customize
+  name: quarkusrobotshop-prorobot
   labels:
-    app: quarkusrobotshop-customize
+    app: quarkusrobotshop-prorobot
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     release: {{ .Release.Name }}
 spec:
-  replicas: {{ .Values.replica_count.customize }}
+  replicas: {{ .Values.replica_count.prorobot }}
   selector:
     matchLabels:
-      app: quarkusrobotshop-customize
+      app: quarkusrobotshop-prorobot
   template:
     metadata:
-      name: quarkusrobotshop-customize-deployment
+      name: quarkusrobotshop-prorobot-deployment
       labels:
-        app:  quarkusrobotshop-customize
+        app:  quarkusrobotshop-prorobot
         release: {{ .Release.Name }}
-        app.kubernetes.io/component: quarkusrobotshop-customize
-        app.kubernetes.io/instance: quarkusrobotshop-customize
+        app.kubernetes.io/component: quarkusrobotshop-prorobot
+        app.kubernetes.io/instance: quarkusrobotshop-prorobot
         app.kubernetes.io/part-of: quarkus-robot
         quarkus-robot: ""
         app.openshift.io/runtime-namespace: {{ .Values.projectnamespace }}
     spec:
       containers:
-        - name: quarkusrobotshop-customize
-          image: quay.io/quarkusrobotshop/quarkusrobotshop-customize:{{ .Values.version.customize }}
+        - name: quarkusrobotshop-prorobot
+          image: quay.io/quarkusrobotshop/quarkusrobotshop-prorobot:{{ .Values.version.prorobot }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: 8080
@@ -235,7 +235,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: quarkuscoffeshop-web
+  name: quarkusrobotshop-web
   labels:
     app: quarkusrobotshop-web
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
